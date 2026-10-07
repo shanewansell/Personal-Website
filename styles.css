@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  border-bottom: solid 2px black;
+}
+
+.navbar-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  background: black;
+}
+
+.navbar-menu {
+  align-items: center;
+}
