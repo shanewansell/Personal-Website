@@ -9,24 +9,52 @@ body {
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: sticky;
   border-bottom: solid 2px black;
   z-index: 999;
+  height: 80px;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1600px;
 }
 
 .navbar-logo {
+  text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
+  color: black;
 }
 
 .navbar-container .navbar-menu {
   display: flex;
   text-align: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-container .navbar-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 3px 20px;
+  border-radius: 20px;
+  border: 2px;
+  transition: all 0.7s ease;
+}
+
+.navbar-container .navbar-menu li a:hover {
+  color: blue;
 }
