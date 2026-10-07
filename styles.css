@@ -11,17 +11,22 @@ body {
 .navbar {
   position: sticky;
   border-bottom: solid 2px black;
+  z-index: 999;
 }
 
 .navbar-container {
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-logo {
-  background: black;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.navbar-menu {
-  align-items: center;
+.navbar-container .navbar-menu {
+  display: flex;
+  text-align: center;
 }
