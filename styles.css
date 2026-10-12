@@ -18,6 +18,7 @@ body {
   height: 80px;
   width: 100%;
   top: 0;
+  background-color: #033803;
 }
 
 .navbar-container {
@@ -34,7 +35,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
-  color: black;
+  color: #fff;
 }
 
 .navbar-container .navbar-menu {
@@ -46,15 +47,73 @@ body {
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
   padding: 3px 20px;
   border-radius: 20px;
   border: 2px;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
 }
 
 .navbar-container .navbar-menu li a:hover {
-  color: blue;
+  text-decoration: underline;
+}
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+@media (max-width: 880px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 225px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    background-color: #033803;
+  }
+
+  .navbar-container .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
