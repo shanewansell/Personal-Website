@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
   <title>Personal Website</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">Personal Website</a>
-      <button class="navbar-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul id="primary-nav" class="navbar-menu">
-        <li><a href="#">Home</a></li>
+  <header>
+    <div id="website_name"><a href="/">Personal Website</a></div>
+    <nav>
+      <ul>
         <li><a href="#">About</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="#">Coursework</a></li>
         <li><a href="#">Clock Project</a></li>
+        <li><a href="#">Hobbies</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onClick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clock Project</a></li>
+        <li><a href="#">Hobbies</a></li>
       </ul>
     </div>
-  </nav>
+  </header>
+  <script src="app.js" defer></script>
 </body>
 </html>
