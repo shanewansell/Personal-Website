@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
 }
 
-#website_name {
+#website-name {
   font-weight: bold;
   font-size: 18px;
   display: flex;
@@ -33,7 +33,7 @@ header {
   justify-content: space-around;
 }
 
-#website_name a {
+#website-name a {
   color: #09c372;
 }
 
