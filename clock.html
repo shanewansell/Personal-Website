@@ -28,11 +28,24 @@
       </ul>
     </div>
   </header>
-  <div id="clock">
-    <div id="hour"></div>
-    <div id="min"></div>
-    <div id="sec"></div>
-  </div>
+  <main class="clock-project">
+    <section class="box">
+      <h2>Clock Project</h2>
+      <p>This is a clock project made using HTML, CSS and JavaScript. The clock can be displayed as Analogue (default) or digital.</p>
+      <div class="clock-modes">
+        <button id="analogue-mode" pressed="true" disabled>Analogue</button>
+        <button id="digital-mode" pressed="false">Digital</button>
+      </div>
+    </section>
+
+    <div id="clock">
+      <div id="hour"></div>
+      <div id="min"></div>
+      <div id="sec"></div>
+      <time id="digital-time" hidden></time>
+    </div>
+  </main>
+
   <script src="app.js"></script>
   <script src="clockScript.js"></script>
 </body>

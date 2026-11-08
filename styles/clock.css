@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Clock Layout */
+.clock-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 5vw, 64px);
+  width: min(1360px, calc(100% - 48px));
+  margin: 64px auto;
+}
+
 #clock, #hour, #min, #sec {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 512px;
-  height: 512px;
 }
 
 #clock {
   position: relative;
-  width: min(512px, 90vw);
+  flex: 0 1 512px;
+  width: min(512px, 40vw);
   aspect-ratio: 1;
-  margin: 64px auto 0 auto;
+  margin: 0;
   background-image: url(../images/clockface.png);
   overflow: hidden;
 }
@@ -21,6 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 #min {
@@ -33,4 +45,107 @@
 
 #sec {
   background-image: url(../images/sechand.png);
+}
+
+#clock.is-digital {
+  display: grid;
+  place-items: center;
+  background-image: none;
+}
+
+#clock.is-digital #hour, #clock.is-digital #min, #clock.is-digital #sec {
+  display: none;
+}
+
+#digital-time {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Box CSS */
+.box {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 800px;
+  width: auto;
+  padding: 20px;
+  background-color: #808080;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.box p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+
+.clock-modes {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.clock-modes button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: white;
+  background: #353836;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.clock-modes button:hover:not(:disabled) {
+  background: #1d1f1d;
+}
+
+.clock-modes button:disabled {
+  opacity: 0.55;
+  background: rgba(29, 31, 29, 0.55);
+  cursor: default;
+}
+
+@media (max-width: 900px) {
+  .clock-project {
+    flex-direction: column;
+    width: min(512px, calc(100% - 32px));
+    margin: 32px auto;
+  }
+
+  #clock {
+    flex: none;
+    width: min(512px, 100%);
+  }
+
+  .box {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    padding: 15px;
+  }
+
+  .box h2 {
+    font-size: 28px;
+  }
+
+  .box p {
+    font-size: 16px;
+  }
 }
