@@ -59,7 +59,6 @@
 
 #digital-time {
   font-size: clamp(2.5rem, 6vw, 5rem);
-  font-variant-numeric: tabular-nums;
 }
 
 /* Box CSS */
@@ -69,9 +68,10 @@
   max-width: 800px;
   width: auto;
   padding: 20px;
-  background-color: #808080;
+  background-color: #5c5b5b;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(75, 74, 74, 0.1);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .box h2 {

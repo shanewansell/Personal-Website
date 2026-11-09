@@ -1,0 +1,34 @@
+.coursework {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 5vw, 64px);
+  width: min(1360px, calc(100% - 48px));
+  margin: 64px auto;
+}
+
+/* Box CSS */
+.box {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 800px;
+  width: auto;
+  padding: 20px;
+  background-color: #5c5b5b;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(75, 74, 74, 0.1);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.box p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
