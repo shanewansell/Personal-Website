@@ -1,0 +1,29 @@
+#clock, #hour, #min, #sec {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 512px;
+  height: 512px;
+}
+
+#clock {
+  position: relative;
+  margin: 64px auto 0 auto;
+  background-image: url(clockface.png);
+}
+
+#hour, #min, #sec {
+  position: absolute;
+}
+
+#min {
+  background-image: url(minhand.png);
+}
+
+#hour {
+  background-image: url(hourhand.png);
+}
+
+#sec {
+  background-image: url(sechand.png);
+}
