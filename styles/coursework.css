@@ -12,9 +12,12 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 760px;
-  height: 300px;
-  max-width: 100%;
+  min-width: 0;
+  max-width: 800px;
+  width: auto;
+  min-height: 0;
+  max-height: 100%;
+  height: auto;
   padding: 20px;
   background-color: #5c5b5b;
   border-radius: 8px;
