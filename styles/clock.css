@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Clock Layout */
+/* Clock CSS */
 .clock-project {
   display: flex;
   align-items: center;
@@ -61,32 +61,6 @@
   font-size: clamp(2.5rem, 6vw, 5rem);
 }
 
-/* Box CSS */
-.box {
-  flex: 1 1 0;
-  min-width: 0;
-  max-width: 800px;
-  width: auto;
-  padding: 20px;
-  background-color: #1d1f1d;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px #4b4a4a1a;
-  border: 1px solid #ffffff;
-}
-
-.box h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-}
-
-.box p {
-  font-size: 18px;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-}
-
 .clock-modes {
   display: inline-flex;
   gap: 8px;
@@ -118,6 +92,33 @@
   cursor: default;
 }
 
+/* Box CSS */
+.box {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 800px;
+  width: auto;
+  padding: 20px;
+  background-color: #1d1f1d;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #4b4a4a1a;
+  border: 1px solid #ffffff;
+}
+
+.box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.box p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Media Queries */
 @media (max-width: 900px) {
   .clock-project {
     flex-direction: column;
@@ -132,7 +133,6 @@
 
   .box {
     flex: none;
-    width: 100%;
   }
 }
 

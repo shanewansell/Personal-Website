@@ -1,19 +1,10 @@
-.coursework {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: min(820px, calc(100% - 48px));
-  margin: 64px auto;
-}
-
 /* Box CSS */
 .box {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  max-width: 800px;
-  width: auto;
+  flex: 3 1 0;
+  box-sizing: border-box;
   min-height: 0;
   max-height: 100%;
   height: auto;
@@ -35,6 +26,16 @@
   font-size: 18px;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
+}
+
+/* Coursework CSS*/
+.coursework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: min(1200px, calc(100% - 48px));
+  margin: 64px auto;
 }
 
 .coursework-links {
@@ -67,4 +68,49 @@
 .coursework-links button:hover {
   background: #202322;
   transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.coursework-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.coursework-image {
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.coursework-item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Horizontal Line */
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 40px 0;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .coursework-item {
+    flex-direction: column;
+  }
+
+  .coursework-image {
+    flex: none;
+  }
+
+  .box {
+    flex: none;
+  }
 }

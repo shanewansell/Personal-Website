@@ -1,0 +1,7 @@
+AI has been used in the following ways in this project:
+- Altering the clockface image to remove the white background to fit in with the website's design.
+  Asked the AI to "Remove the white background from around the clock"
+- Fitting the images next to the coursework descriptions.
+  The prompt use here was "Fit the image next to the coursework description with roughly a 60:40 ratio"
+  What AI changed in my code was alter my box css by removing limiters on the size and adding the flex property to the box,
+  It also added the same flex property to my coursework-image css, and altered the width property and added display block on my coursework-item img css.
