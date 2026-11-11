@@ -1,0 +1,14 @@
+.videos-container {
+  display: flex;
+  justify-content: center;
+  margin: 64px auto;
+}
+
+.video {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+}

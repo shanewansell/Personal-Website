@@ -68,10 +68,10 @@
   max-width: 800px;
   width: auto;
   padding: 20px;
-  background-color: #5c5b5b;
+  background-color: #1d1f1d;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(75, 74, 74, 0.1);
-  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 6px #4b4a4a1a;
+  border: 1px solid #ffffff;
 }
 
 .box h2 {
@@ -93,7 +93,7 @@
   margin-top: 20px;
   padding: 5px;
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.18);
+  background: #0000002e;
 }
 
 .clock-modes button {
@@ -109,12 +109,12 @@
 }
 
 .clock-modes button:hover:not(:disabled) {
-  background: #1d1f1d;
+  background: #202322;
 }
 
 .clock-modes button:disabled {
   opacity: 0.55;
-  background: rgba(29, 31, 29, 0.55);
+  background: #1d1f1d8c;
   cursor: default;
 }
 

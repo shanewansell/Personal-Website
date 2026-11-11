@@ -49,6 +49,16 @@ ul a {
   color: white;
 }
 
+ul a:hover {
+  color: #09c372;
+  transition: color 0.2s ease;
+}
+
+.current-page a {
+  color: #09c372;
+  font-weight: bold;
+}
+
 ul li {
   padding: 5px;
   margin-left: 10px;

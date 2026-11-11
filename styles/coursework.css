@@ -18,11 +18,10 @@
   max-height: 100%;
   height: auto;
   padding: 20px;
-  background-color: #5c5b5b;
+  background-color: #1d1f1d;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(75, 74, 74, 0.1);
-  border: 1px solid rgb(255, 255, 255);
-  box-sizing: border-box;
+  box-shadow: 0 4px 6px #4b4a4a1a;
+  border: 1px solid #ffffff;
 }
 
 .box h2 {
@@ -66,6 +65,6 @@
 }
 
 .coursework-links button:hover {
-  background: #1d1f1d;
+  background: #202322;
   transition: background-color 0.2s ease, opacity 0.2s ease;
 }
