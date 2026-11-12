@@ -5,3 +5,7 @@ AI has been used in the following ways in this project:
   The prompt use here was "Fit the image next to the coursework description with roughly a 60:40 ratio"
   What AI changed in my code was alter my box css by removing limiters on the size and adding the flex property to the box,
   It also added the same flex property to my coursework-image css, and altered the width property and added display block on my coursework-item img css.
+- Using JS to display different clock modes based on button pressed (Not including the change in description as it was done later). 
+  The prompt used here was "Help me write a JS function to display different clock modes based on the button pressed"
+  AI used my consts I had and HTML and added disabled to use in the CSS.
+  In JS, it added the implementation of hiding the different clocks based on button pressed and disabling the pressed button.

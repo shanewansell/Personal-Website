@@ -39,8 +39,8 @@ function setClockMode(mode) {
   digitalTime.hidden = !isDigital;
   analogueMode.disabled = !isDigital;
   digitalMode.disabled = isDigital;
-  analogueMode.setAttribute('pressed', String(!isDigital));
-  digitalMode.setAttribute('pressed', String(isDigital));
+  analogueMode.setAttribute(String(!isDigital));
+  digitalMode.setAttribute(String(isDigital));
 
   setDescription(mode);
 }
