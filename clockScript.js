@@ -5,6 +5,10 @@ const clock = document.getElementById('clock');
 const digitalTime = document.getElementById('digital-time');
 const analogueMode = document.getElementById('analogue-mode');
 const digitalMode = document.getElementById('digital-mode');
+const analogueTitle = document.getElementById('analogue-title');
+const digitalTitle = document.getElementById('digital-title');
+const analogueDescription = document.getElementById('analogue-description');
+const digitalDescription = document.getElementById('digital-description');
 
 function updateClock() {
   const now = new Date();
@@ -21,6 +25,14 @@ function updateClock() {
   digitalTime.textContent = now.toLocaleTimeString();
 }
 
+function setDescription(mode) {
+  const isDigital = mode === 'digital';
+  analogueTitle.hidden = isDigital;
+  digitalTitle.hidden = !isDigital;
+  analogueDescription.hidden = isDigital;
+  digitalDescription.hidden = !isDigital;
+}
+
 function setClockMode(mode) {
   const isDigital = mode === 'digital';
   clock.classList.toggle('is-digital', isDigital);
@@ -29,6 +41,8 @@ function setClockMode(mode) {
   digitalMode.disabled = isDigital;
   analogueMode.setAttribute('pressed', String(!isDigital));
   digitalMode.setAttribute('pressed', String(isDigital));
+
+  setDescription(mode);
 }
 
 analogueMode.addEventListener('click', () => setClockMode('analogue'));

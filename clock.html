@@ -32,8 +32,10 @@
   </header>
   <main class="clock-project">
     <section class="box">
-      <h2>Clock Project</h2>
-      <p>This is a clock project made using HTML, CSS and JavaScript. The clock can be displayed as Analogue (default) or digital.</p>
+      <h2 id="analogue-title">Analogue Clock</h2>
+      <h2 id="digital-title" hidden>Digital Clock</h2>
+      <p id="analogue-description">This is a analogue clock which displays the users local time using smoothly rotating hands.</p>
+      <p id="digital-description" hidden>This is a digital clock which displays the users local time.</p>
       <div class="clock-modes">
         <button id="analogue-mode" pressed="true" disabled>Analogue</button>
         <button id="digital-mode" pressed="false">Digital</button>
