@@ -9,3 +9,6 @@ AI has been used in the following ways in this project:
   The prompt used here was "Help me write a JS function to display different clock modes based on the button pressed"
   AI used my consts I had and HTML and added disabled to use in the CSS.
   In JS, it added the implementation of hiding the different clocks based on button pressed and disabling the pressed button.
+- Positioning index header and description together in middle for desktop and mobile
+  The prompt used here was "Help me position my index header and description in the middle of my page on both desktop and mobile"
+  It added the text-content css class to my index and the css styling
