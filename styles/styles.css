@@ -18,6 +18,8 @@ header a {
 }
 
 header {
+  position: relative;
+  z-index: 100;
   padding: 0 20px;
   background-color: #1d1f1d;
   height: 50px;

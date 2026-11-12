@@ -101,8 +101,7 @@
   padding: 20px;
   background-color: #1d1f1d;
   border-radius: 8px;
-  box-shadow: 0 4px 6px #4b4a4a1a;
-  border: 1px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .box h2 {
